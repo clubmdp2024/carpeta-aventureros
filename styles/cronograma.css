@@ -3,3 +3,24 @@ header {
     text-align: center;
     font-family: Arial, sans-serif;
 }
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffca28;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: slideIn 0.5s;
+}
+
+button:hover {
+    background-color: #ffb300;
+    transform: scale(1.05);
+}
