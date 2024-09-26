@@ -1,234 +1,132 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #fffae6; /* Fondo claro y alegre */
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    margin: 0;
-    padding: 0;
-    animation: backgroundAnimation 5s infinite;
-  }
-  
-  @keyframes backgroundAnimation {
-    0% { background-color: #fffae6; }
-    50% { background-color: #ffe4b3; }
-    100% { background-color: #fffae6; }
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #282c34, #3a3f47);
+  color: #fff;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 2.8em;
+  animation: fadeIn 1s ease-in-out;
+  text-shadow: 0 0 20px rgba(0, 255, 204, 0.9); /* Cambiado a azul */
+  color: #00FFCC; /* Color del título */
+}
+
+.content {
+  background: rgba(50, 50, 50, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.8); /* Cambiado a azul */
+  color: #00FFCC; /* Color del subtítulo */
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #007BFF;
+  margin-top: 10px;
+  transition: width 0.5s ease;
+}
+
+h2:hover::after {
+  width: 120px;
+}
+
+p {
+  margin: 15px 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.audio-controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  padding: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+button {
+  background: linear-gradient(90deg, #007BFF, #0056b3);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  font-size: 1.2em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
   h1 {
-    color: #ff6f61;
-    font-size: 3em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    animation: bounce 1.5s infinite;
+    font-size: 2.2em;
   }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
+
   h2 {
-    color: #ffca28;
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 1.8em;
   }
-  
-  p, ul {
-    font-size: 1.3em;
-    line-height: 1.6;
-    margin: 0 auto 20px;
-    padding: 0 20px;
-    width: 90%;
-    max-width: 700px;
-  }
-  
-  ul {
-    list-style-type: square;
-    padding-left: 40px;
-  }
-  
-  ul li {
-    margin-bottom: 15px;
-    color: #4caf50;
-  }
-  
-  /* Mision, Vision, Propositos Sections */
+
   .content {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    padding: 15px;
   }
-  
-  .content:hover {
-    transform: scale(1.05);
-  }
-  
-  .mision {
-    border-left: 10px solid #42a5f5;
-  }
-  
-  .propositos {
-    border-left: 10px solid #ffeb3b;
-  }
-  
-  .vision {
-    border-left: 10px solid #ff7043;
-  }
-  
-  /* Audio Section */
-  .audio-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #e3f2fd;
-    border-radius: 20px;
-  }
-  
-  .audio-controls {
-    margin-top: 20px;
-  }
-  
-  audio {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-  
+
   button {
-    background-color: #ff6f61;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
   }
-  
-  button:hover {
-    background-color: #e64a19;
-    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  /* Animación de transición de color */
-  @keyframes colorChange {
-    0% { color: #ffca28; }
-    50% { color: #4caf50; }
-    100% { color: #ffca28; }
+  to {
+    opacity: 1;
   }
-  
-  /* --------- Responsive Design --------- */
-  
-  /* Pantallas pequeñas (móviles) */
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 2em;
-    }
-  
-    h2 {
-      font-size: 1.8em;
-    }
-  
-    p, ul {
-      font-size: 1.1em;
-      padding: 0 10px;
-    }
-  
-    .content, .audio-section {
-      width: 95%;
-      margin-bottom: 15px;
-    }
-  
-    audio {
-      width: 100%;
-    }
-  
-    button {
-      padding: 12px 20px;
-      font-size: 1em;
-    }
-  }
-  
-  /* Pantallas medianas (tablets, móviles grandes) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    h1 {
-      font-size: 2.5em;
-    }
-  
-    h2 {
-      font-size: 2.2em;
-    }
-  
-    p, ul {
-      font-size: 1.2em;
-      padding: 0 15px;
-    }
-  
-    .content, .audio-section {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  
-    audio {
-      width: 90%;
-    }
-  
-    button {
-      padding: 14px 22px;
-      font-size: 1.1em;
-    }
-  }
-  
-  /* Pantallas grandes (escritorio y laptops grandes) */
-  @media (min-width: 769px) and (max-width: 1200px) {
-    main {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 30px;
-    }
-  
-    .content, .audio-section {
-      width: 45%;
-    }
-  
-    p, ul {
-      font-size: 1.3em;
-    }
-  }
-  
-  /* Pantallas extra grandes (escritorio) */
-  @media (min-width: 1201px) {
-    main {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px;
-    }
-  
-    .content, .audio-section {
-      width: 40%;
-    }
-  
-    h1 {
-      font-size: 3.5em;
-    }
-  
-    h2 {
-      font-size: 2.8em;
-    }
-  
-    p, ul {
-      font-size: 1.4em;
-    }
-  
-    button {
-      padding: 18px 30px;
-      font-size: 1.3em;
-    }
-  }
-  
+}

@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        resetButton.style.display = "none"; // Asegurarse de ocultar el botón en una nueva partida
+        
         hideAllButtons();
         saveGameState();
     }
@@ -88,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             squares[index].element = squareElement;
         });
 
-        if (matchedPairs === totalPairs) {
-            resetButton.style.display = "inline-block";
-        }
+        
     }
 
     function handleClick(squareElement) {

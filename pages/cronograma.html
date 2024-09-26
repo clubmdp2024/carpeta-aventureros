@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronograma de Actividades</title>
+    <title>Cronograma</title>
     <link rel="stylesheet" href="../styles/cronograma.css">
 </head>
 <body>
-    <header>
-        <h1>Cronograma de Actividades</h1>
-        
-    </header>
-    <main>
-        <div>
-            <iframe src="https://www.jigsawplanet.com/?rc=play&amp;pid=3bf501ceba4a&amp;view=iframe&amp;bgcolor=0x0011ff" style="width:100%;height:600px" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="button-container">
-            <button onclick="window.location.href='../index.html'">Volver</button>
-        </div>
-    </main>
+    <h1>CRONOGRAMA DE ACTIVIDADES</h1>
+    <div id="puzzle"></div>
+    <div id="zoom-container">
+        <button id="close-zoom">Cerrar</button>
+        <img id="zoomed-image" src="../images/rompecabezas.png" alt="Imagen Detallada">
+        <div class="lens"></div> <!-- Lupa aquí -->
+    </div>
+    <button id="back-button" onclick="window.location.href='../index.html'">Volver</button>
+    <script src="../scripts/cronograma.js"></script>
 </body>
 </html>

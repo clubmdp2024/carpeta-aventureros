@@ -1,25 +1,85 @@
-body {
-    background-color: #d9ffea;
-    text-align: center;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c); /* Fondo futurista oscuro */
+  color: #fff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  animation: glow 1.5s infinite alternate; /* Animación de resplandor */
+  color: #00ffcc;
+  text-shadow: 0 0 15px rgba(0, 255, 204, 0.8), 0 0 30px rgba(0, 255, 204, 0.8);
+}
+
+.fp-iframe {
+  border: 2px solid #00ffcc;
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
 .button-container {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 button {
-    background-color: #ffca28;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 25px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    animation: slideIn 0.5s;
+  background: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2em;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.8); /* Resplandor */
 }
+
 button:hover {
-    background-color: #ffb300;
-    transform: scale(1.05);
+  background: #00ffcc;
+  color: #0f0f0f;
+  transform: scale(1.1); /* Efecto de hover */
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em; /* Tamaño de fuente más pequeño en móviles */
+  }
+
+  .fp-iframe {
+    height: 400px; /* Ajustar altura del iframe en móviles */
+  }
+
+  button {
+    width: 100%; /* Botón se hace ancho completo */
+    padding: 12px;
+    font-size: 1em; /* Reducir el tamaño de fuente en móviles */
+  }
+}
+
+/* Animación de resplandor */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+  }
+  to {
+    text-shadow: 0 0 30px #00ffcc, 0 0 45px #00ffcc;
+  }
 }

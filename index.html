@@ -7,15 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="reset-btn">Reiniciar Juego</button>
-    <div id="board"></div>
-    <div id="buttons-container" class="hidden">
-        <button id="cronograma-btn" class="hidden">Ver Cronograma</button>
-        <button id="historia-btn" class="hidden">Ver Historia</button>
-        <button id="hojas-btn" class="hidden">Ver Hojas</button>
-        <button id="registro-btn" class="hidden">Ver Registro</button>
-        <button id="vision-btn" class="hidden">Ver Visión</button>
+    <header>
+        <img class="logo_pagina"  src="./images/logo-01.png" alt="">
+    </header>
+    
+    <div class="container">
+        <!-- Contenedor de frases -->
+        <div class="phrases-container">
+            <div class="phrase-square">La esperanza es el sueño de los que están despiertos.</div>
+            <div class="phrase-square">La fe es dar el primer paso, incluso cuando no ves la escalera.</div>
+            <div class="phrase-square">Donde hay amor, hay vida.</div>
+            <div class="phrase-square">La vida es un regalo, y nos da la oportunidad de ser lo mejor.</div>
+            <div class="phrase-square">El futuro pertenece a aquellos que creen en la belleza de sus sueños.</div>
+        </div>
+
+        <!-- Tablero de juego -->
+        <div id="board"></div>
     </div>
+
+    <div id="buttons-container" class="hidden">
+        <div class="button-row">
+            <button id="cronograma-btn" class="hidden">Ver Cronograma</button>
+            <button id="historia-btn" class="hidden">Ver Historia</button>
+            <button id="hojas-btn" class="hidden">Ver Hojas</button>
+        </div>
+        <div class="button-row">
+            <button id="registro-btn" class="hidden">Ver Registro</button>
+            <button id="vision-btn" class="hidden">Ver Visión</button>
+        </div>
+        <button id="reset-btn">Reiniciar Juego</button>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
