@@ -173,38 +173,107 @@ button:hover {
 }
 
 /* Diseño Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        flex-direction: column; /* Cambiar a columna en pantallas medianas */
         align-items: center; /* Centrar el contenido */
+    }
+
+    .logo_pagina {
+        width: 300px; /* Ajustar tamaño del logo en pantallas medianas */
     }
 
     #board {
         grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
-        grid-template-rows: repeat(4, 1fr); /* 4 filas */
         max-width: 90%; /* Ajustar el ancho del tablero */
+        margin-top: 20px; /* Espacio superior */
     }
 
     .square {
-        width: 80px;
-        height: 80px; /* Ajustar el tamaño de los cuadrados */
+        width: 80px; /* Ajustar el tamaño de los cuadrados */
+        height: 80px;
+    }
+}
+
+/* Diseño Responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas medianas */
+        align-items: center; /* Centrar el contenido */
+    }
+
+    .logo_pagina {
+        width: 300px; /* Ajustar tamaño del logo en pantallas medianas */
+    }
+
+    #board {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
+        max-width: 90%; /* Ajustar el ancho del tablero */
+        margin-top: 20px; /* Espacio superior */
+    }
+
+    .square {
+        width: 80px; /* Ajustar el tamaño de los cuadrados */
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Agregar un poco de padding en pantallas pequeñas */
+    }
+
+    .logo_pagina {
+        width: 250px; /* Ajustar tamaño del logo en pantallas pequeñas */
+    }
+
+    #board {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
+        margin-top: 10px; /* Espacio superior */
+    }
+
+    .square {
+        width: 70px; /* Ajustar el tamaño de los cuadrados */
+        height: 70px;
+    }
+
+    #buttons-container {
+        margin-left: 0; /* Centrar botones en pantallas pequeñas */
+        margin-top: 10px; /* Espacio superior */
     }
 }
 
 @media (max-width: 480px) {
+    .logo_pagina {
+        width: 200px; /* Ajustar tamaño del logo en pantallas extra pequeñas */
+        position: relative;
+        top: 10px;
+    }
+
     #board {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
-        grid-template-rows: repeat(4, 1fr); /* 4 filas */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas extra pequeñas */
         max-width: 100%; /* Asegurar que el tablero ocupe el ancho completo */
+        position: relative;
+        top: -10px;
     }
 
     .square {
-        width: 60px;
-        height: 60px; /* Ajustar el tamaño de los cuadrados */
+        width: 60px; /* Ajustar el tamaño de los cuadrados */
+        height: 60px;
     }
 
     #reset-btn {
         font-size: 16px; /* Reducir el tamaño de la fuente del botón */
         padding: 8px 16px; /* Reducir el tamaño del botón */
+    }
+
+    #buttons-container {
+        flex-direction: column; /* Cambiar a columna para los botones */
+        align-items: center; /* Centrar botones */
+    }
+
+    .button-row {
+        flex-direction: column; /* Cambiar a columna en las filas de botones */
+        align-items: center; /* Centrar botones */
     }
 }
