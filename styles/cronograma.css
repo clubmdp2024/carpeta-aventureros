@@ -140,14 +140,14 @@ h1 {
     height: 100px;
   }
 
-  #back-button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
   #zoomed-image {
     max-width: 90%;
     max-height: 70%;
+  }
+
+  #back-button {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }
 
@@ -161,6 +161,11 @@ h1 {
     height: 80px;
   }
 
+  #zoomed-image {
+    max-width: 85%;
+    max-height: 60%;
+  }
+
   #back-button {
     font-size: 14px;
     padding: 8px 15px;
@@ -169,10 +174,5 @@ h1 {
   #close-zoom {
     padding: 8px 15px;
     font-size: 14px;
-  }
-
-  #zoomed-image {
-    max-width: 85%;
-    max-height: 60%;
   }
 }
