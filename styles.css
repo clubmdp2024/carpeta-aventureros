@@ -24,7 +24,9 @@ html, body {
     background: linear-gradient(135deg, #e0f7fa, #80deea); /* Fondo degradado */
 }
 .logo_pagina {
-   width: 500px;
+   width: 400px;
+   position: relative;
+   top: -20px;
 }
 /* Estilo para el contenedor principal */
 .container {
@@ -32,13 +34,15 @@ html, body {
     position: relative;
     top: -80px;
     justify-content: space-between;
-    gap: 60px;
+    gap: 90px;
     width: 100%;
     max-width: 1000px; /* Ancho máximo del contenedor */
 }
 
 /* Estilo para el contenedor de frases */
 .phrases-container {
+    position: relative;
+    top: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacio entre cuadrados */
@@ -67,7 +71,7 @@ html, body {
     grid-template-columns: repeat(5, 100px);
     gap: 10px; /* Espacio entre los cuadrados */
     justify-content: center;
-    margin-bottom: -55px; /* Espacio para los botones */
+    margin-bottom: -45px; /* Espacio para los botones */
     margin-top: 140px;
     position: relative;
     top: -120px;
