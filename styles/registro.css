@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -5,15 +7,19 @@ body {
     align-items: center;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #000; /* Fondo negro */
 }
 
 h1 {
-    color: #00ffcc;
+    color: #00ffcc; /* Color del texto del título */
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: glow 1.5s ease-in-out infinite alternate; /* Efecto de glow */
 }
 
+/* Estilo del contenedor del carrusel */
 #carousel-container {
     position: relative;
     width: 100%;
@@ -47,18 +53,20 @@ iframe {
     text-align: center;
 }
 
+/* Botones de control */
 .control-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #00ffcc;
+    background-color: #00ffcc; /* Color del botón */
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 5px #00ffcc; /* Glow inicial */
 }
 
 #prevBtn {
@@ -70,12 +78,14 @@ iframe {
 }
 
 .control-btn:hover {
-    background-color: #008f7a;
+    background-color: #008f7a; /* Color del botón al pasar el cursor */
+    box-shadow: 0 0 15px #00ffcc; /* Glow al pasar el cursor */
 }
 
+/* Botón "Futurista" */
 .futuristic-btn {
     margin-top: 30px;
-    background-color: #ff00ff;
+    background-color: #439bff;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -83,15 +93,45 @@ iframe {
     border-radius: 50px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .futuristic-btn:hover {
-    background-color: #d400d4;
+    background-color: #00ffcc; /* Color del botón "futurista" al pasar el cursor */
     transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffcc; /* Glow al pasar el cursor */
 }
 
-/* Responsive Styles */
+/* Botón de volver */
+.back-btn {
+    margin-top: 20px;
+    background-color: #00ffcc; /* Color del botón de volver */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 5px #00ffcc; /* Glow inicial */
+}
+
+.back-btn:hover {
+    background-color: #008f7a; /* Color al pasar el cursor */
+    box-shadow: 0 0 15px #00ffcc; /* Glow al pasar el cursor */
+}
+
+/* Animación de resplandor para el título */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc, 0 0 50px #00ffcc;
+    }
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
     iframe {
         height: 200px;
@@ -101,7 +141,7 @@ iframe {
         font-size: 1rem;
     }
 
-    .control-btn {
+    .control-btn, .back-btn {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
@@ -121,7 +161,7 @@ iframe {
         font-size: 0.9rem;
     }
 
-    .control-btn {
+    .control-btn, .back-btn {
         font-size: 0.8rem;
     }
 
