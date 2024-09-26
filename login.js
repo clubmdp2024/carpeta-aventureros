@@ -2,8 +2,8 @@ function login(event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
 
     // Usuario y contraseña de ejemplo
-    const validUsername = ""; 
-    const validPassword = "contraseña"; 
+    const validUsername = "mensajerosdeesperanza"; 
+    const validPassword = "todossomosuno"; 
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
