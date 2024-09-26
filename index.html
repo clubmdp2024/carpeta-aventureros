@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesus Nuestra Identidad</title>
+    <style>
+      /* Deshabilitar la selección de texto en todo el cuerpo de la página */
+      body {
+          -webkit-user-select: none; /* Safari */
+          -moz-user-select: none;    /* Firefox */
+          -ms-user-select: none;     /* Internet Explorer */
+          user-select: none;         /* Estándar */
+      }
+  </style>
+  <script>
+      function deshabilitarProtecciones() {
+          // Deshabilitar clic derecho
+          document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+          });
+
+          // Deshabilitar copiar
+          document.addEventListener('copy', function(e) {
+              e.preventDefault();
+          });
+
+          // Deshabilitar pegar
+          document.addEventListener('paste', function(e) {
+              e.preventDefault();
+          });
+
+          // Deshabilitar cortar
+          document.addEventListener('cut', function(e) {
+              e.preventDefault();
+          });
+
+          // Deshabilitar la selección de texto manualmente
+          document.addEventListener('mousedown', function(e) {
+              e.preventDefault();
+          });
+      }
+
+      // Ejecutar la función al cargar la página
+      window.onload = deshabilitarProtecciones;
+  </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
