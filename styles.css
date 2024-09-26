@@ -28,6 +28,13 @@ html, body {
    position: relative;
    top: -20px;
 }
+.pista_texto {
+    position: relative;
+    left: -320px;
+    color: #212E30;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
 /* Estilo para el contenedor principal */
 .container {
     display: flex;
@@ -275,5 +282,10 @@ button:hover {
     .button-row {
         flex-direction: column; /* Cambiar a columna en las filas de botones */
         align-items: center; /* Centrar botones */
+    }
+    .pista_texto {
+        left: 3px;
+        display: flex;
+        text-align: center;
     }
 }
