@@ -75,6 +75,9 @@ button:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
+.logo_login {
+    width: 400px;
+}
 
 .forgot-password {
     margin-top: 15px;
