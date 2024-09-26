@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Fotográfico</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
     <link rel="stylesheet" href="../styles/registro.css">
 </head>
 <body>
     <h1>Registro Fotográfico</h1>
-    <button onclick="window.location.href='../index.html'">Volver</button>
+
+    <div id="carousel-container">
+        <div id="carousel">
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/icZVytpNvBg?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title">Aventura Fotográfica en la Naturaleza</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/32_Plw-t1qE?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title">Capturando Momentos Únicos</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/7kE4uxEg56k?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title">Perspectivas en Movimiento</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/iSTTCyybA0o?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title">Fotografía Urbana</p>
+            </div>
+            <div class="slide">
+                <iframe src="https://www.youtube.com/embed/qHirvQqLuf8?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                <p class="video-title">Paisajes en Detalle</p>
+            </div>
+        </div>
+        <button id="prevBtn" class="control-btn">Anterior</button>
+        <button id="nextBtn" class="control-btn">Siguiente</button>
+    </div>
+
+    <button class="futuristic-btn" onclick="window.location.href='../index.html'">Volver</button>
+
+    <script src="../scripts/registro.js"></script>
 </body>
 </html>
