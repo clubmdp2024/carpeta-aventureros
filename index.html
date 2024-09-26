@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juego de Memoria</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <img class="logo_pagina"  src="./images/logo-01.png" alt="">
+      <img class="logo_pagina" src="./images/logo-01.png" alt="" />
     </header>
-    
-    <div class="container">
-        <!-- Contenedor de frases -->
-        <div class="phrases-container">
-            <div class="phrase-square">La esperanza es el sueño de los que están despiertos.</div>
-            <div class="phrase-square">La fe es dar el primer paso, incluso cuando no ves la escalera.</div>
-            <div class="phrase-square">Donde hay amor, hay vida.</div>
-            <div class="phrase-square">La vida es un regalo, y nos da la oportunidad de ser lo mejor.</div>
-            <div class="phrase-square">El futuro pertenece a aquellos que creen en la belleza de sus sueños.</div>
-        </div>
 
-        <!-- Tablero de juego -->
-        <div id="board"></div>
+    <div class="container">
+      <!-- Contenedor de frases -->
+      <div class="phrases-container">
+        <div class="phrase-square">
+          ¿Cual es nuestra identidad? <b>1 Pedro 2:9.</b>
+        </div>
+        <div class="phrase-square">
+          Recordemos el hecho fue lo que marco un antes y despues en la historia
+          de la humanidad. <br />
+          <b>Filipences 2:8 </b>
+        </div>
+        <div class="phrase-square">
+          Recuerda el dato relativo al tiempo. <br />
+          <b>Eclesiastés 3:1</b>
+        </div>
+        <div class="phrase-square">
+          Recuerda prepararte para la promesa <br />
+          <b> Mateo 25:34</b>
+        </div>
+        <div class="phrase-square">
+          No olvides trasladarte a la creacion <br />
+          <b>Genesis 1:26</b>
+        </div>
+      </div>
+
+      <!-- Tablero de juego -->
+      <div id="board"></div>
     </div>
 
     <div id="buttons-container" class="hidden">
-        <div class="button-row">
-            <button id="cronograma-btn" class="hidden">Ver Cronograma</button>
-            <button id="historia-btn" class="hidden">Ver Historia</button>
-            <button id="hojas-btn" class="hidden">Ver Hojas</button>
-        </div>
-        <div class="button-row">
-            <button id="registro-btn" class="hidden">Ver Registro</button>
-            <button id="vision-btn" class="hidden">Ver Visión</button>
-        </div>
-        <button id="reset-btn">Reiniciar Juego</button>
+      <div class="button-row">
+        <button id="cronograma-btn" class="hidden">Ver Cronograma</button>
+        <button id="historia-btn" class="hidden">Ver Historia</button>
+        <button id="hojas-btn" class="hidden">Ver Hojas</button>
+      </div>
+      <div class="button-row">
+        <button id="registro-btn" class="hidden">Ver Registro</button>
+        <button id="vision-btn" class="hidden">Ver Visión</button>
+      </div>
+      <button id="reset-btn">Reiniciar Juego</button>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

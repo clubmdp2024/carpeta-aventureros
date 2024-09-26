@@ -47,7 +47,7 @@ html, body {
 
 /* Estilo para los cuadrados de frases */
 .phrase-square {
-    background-color: rgb(4, 0, 255); /* Fondo azul */
+    background-color: rgb(0, 255, 76); /* Fondo azul */
     border: 1px solid #ccc; /* Borde gris */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interno */
