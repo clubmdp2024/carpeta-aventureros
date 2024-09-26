@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let matchedPairs = 0;
     const totalPairs = 5;
     const images = [
-        'images/image1.png',
-        'images/image2.png',
-        'images/image3.png',
-        'images/image4.png',
-        'images/image5.png'
+        '../images\image1.png',
+        '../images/image2.png',
+        '../images/image3.png',
+        '../images/image4.png',
+        '../images/image5.png'
     ];
 
     function initBoard() {
