@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let matchedPairs = 0;
     const totalPairs = 5;
     const images = [
-        '../images\image1.png',
+        '../images/image1.png',
         '../images/image2.png',
         '../images/image3.png',
         '../images/image4.png',
@@ -197,19 +197,19 @@ document.addEventListener("DOMContentLoaded", function () {
     function setButtonVisibility(image) {
         let btnId;
         switch (image) {
-            case 'images/image1.png':
+            case '../images/image1.png':
                 btnId = "cronograma-btn";
                 break;
-            case 'images/image2.png':
+            case '../images/image2.png':
                 btnId = "historia-btn";
                 break;
-            case 'images/image3.png':
+            case '../images/image3.png':
                 btnId = "hojas-btn";
                 break;
-            case 'images/image4.png':
+            case '../images/image4.png':
                 btnId = "registro-btn";
                 break;
-            case 'images/image5.png':
+            case '../images/image5.png':
                 btnId = "vision-btn";
                 break;
         }
@@ -224,19 +224,19 @@ document.addEventListener("DOMContentLoaded", function () {
         let targetPage;
         switch (btnId) {
             case "cronograma-btn":
-                targetPage = "pages/cronograma.html";
+                targetPage = "./cronograma.html";
                 break;
             case "historia-btn":
-                targetPage = "pages/historia.html";
+                targetPage = "./historia.html";
                 break;
             case "hojas-btn":
-                targetPage = "pages/hojas_de_vida.html";
+                targetPage = "./hojas_de_vida.html";
                 break;
             case "registro-btn":
-                targetPage = "pages/registro.html";
+                targetPage = "./registro.html";
                 break;
             case "vision-btn":
-                targetPage = "pages/vision_mision.html";
+                targetPage = "./vision_mision.html";
                 break;
         }
         button.addEventListener('click', () => {
